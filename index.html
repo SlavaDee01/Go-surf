@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go Surf!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo logo" aria-label="logo">
+        <span class="header__logo-icon">Go</span>
+        <span class="header__logo-icon header__logo-icon--add">Surf</span>
+      </a>
+      <button class="btn-reset burger-btn" aria-label="open menu">
+        <span></span>
+      </button>
+      <nav class="header__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#surf" class="nav__link">
+              <img class="nav__link-icon" src="images/nav-icon1.svg" alt="image">
+              <span class="nav__link-point">Surf</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#travel" class="nav__link">
+              <img class="nav__link-icon" src="images/nav-icon2.svg" alt="image">
+              <span class="nav__link-point">Travel</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#sleep" class="nav__link">
+              <img class="nav__link-icon" src="images/nav-icon3.svg" alt="image">
+              <span class="nav__link-point">Sleep</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#shop" class="nav__link">
+              <img class="nav__link-icon" src="images/nav-icon4.svg" alt="image">
+              <span class="nav__link-point">Shop</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__info">
+      <button class="btn-reset header__search">
+        <img class="header__search-icon" src="images/search.svg" alt="search">
+      </button>
+      <div class="header__date">
+        <span class="header__date-number">20</span>
+        <div class="header__date-flex">
+          <span class="header__date-month">11</span>
+          <span>|</span>
+          <span class="header__date-year">2023</span>
+        </div>
+      </div>
+      <span class="header__location">California</span>
+    </div>
+   </div> 
+  </header>
+  <div class="container">
+    <main class="main">
+      <section class="intro" id="intro">
+        <h1 class="intro__title">Go-serf</h1>
+        
+          <div class="swiper intro-swiper">
+            <div class="intro-swiper-navigation swiper-navigation">
+             <div class="intro-swiper-prev">
+              <img class="swiper-arrow" src="images/arrleft.svg" alt="arrow">
+             </div>
+             <div class="intro-swiper-next">
+              <img class="swiper-arrow" src="images/arright.svg" alt="arrow">
+             </div>
+            </div>
+            <div class="swiper-wrapper">  
+              <div class="swiper-slide">
+                <div class="intro__content">
+                  <div class="intro__inner">
+                    <p class="intro__content-descr">Surf</p>
+                    <h2 class="intro__content-title">North Shore</h2>
+                    <p class="intro__content-descr">Condition</p>
+                    <h3 class="intro__content-subtitle">Radical</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="intro__content">
+                  <div class="intro__inner">
+                    <p class="intro__content-descr">Surf</p>
+                    <h2 class="intro__content-title">South Shore</h2>
+                    <p class="intro__content-descr">Condition</p>
+                    <h3 class="intro__content-subtitle">Radical</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="intro__content">
+                  <div class="intro__inner">
+                    <p class="intro__content-descr">Surf</p>
+                    <h2 class="intro__content-title">West Shore</h2>
+                    <p class="intro__content-descr">Condition</p>
+                    <h3 class="intro__content-subtitle">Radical</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="intro__content">
+                  <div class="intro__inner">
+                    <p class="intro__content-descr">Surf</p>
+                    <h2 class="intro__content-title">East Shore</h2>
+                    <p class="intro__content-descr">Condition</p>
+                    <h3 class="intro__content-subtitle">Radical</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="intro-swiper-next intro-swiper-next-one">
+              <img class="swiper-arrow" src="images/arright.svg" alt="arrow">
+            </div>
+            <div class="intro-pagination swiper-pagination"></div>
+           </div>
+         
+        <a class="btn-down" href="#">
+          <img class="down-arrow" src="images/down-arrows.svg" alt="arrow">
+        </a>  
+      </section>
+      <section class="surf" id="surf">
+        <h2 class="surf__title section-title">SURF</h2>
+          <p class="surf__descr section-descr">Current location</p>
+          <h3 class="surf__subtitle section-subtitle">CALIFORNIA <span>|</span> USA</h3>
+        <div class="surf__inner">
+           <div class="surf__map">
+            <img src="images/surf-map.svg" alt="map" class="surf__map-image">
+            <div class="map-point">
+              <div class="map-point__info">
+                <h3 class="map-point__title">Airlie Beach</h3>
+                <a href="#" class="map-point__btn">
+                  <img src="images/info-arr.svg" alt="arrow">
+                </a>
+                <h4 class="map-point__subtitle">Australia</h4>
+                <ul class="list-reset map-point__columns">
+                  <li class="map-point__item">
+                    <img src="images/wave.svg" alt="wave">
+                    <span class="map-point__num">9 - 13</span>
+                    <span class="map-point__descr">SURF (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Water.svg" alt="water">
+                    <span class="map-point__num">+2.3</span>
+                    <span class="map-point__descr">TIDE (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Wind.svg" alt="wind">
+                    <span class="map-point__num">4 SE</span>
+                    <span class="map-point__descr">WIND (KTS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-point">
+              <div class="map-point__info">
+                <h3 class="map-point__title">Airlie Beach</h3>
+                <a href="#" class="map-point__btn">
+                  <img src="images/info-arr.svg" alt="arrow">
+                </a>
+                <h4 class="map-point__subtitle">Australia</h4>
+                <ul class="list-reset map-point__columns">
+                  <li class="map-point__item">
+                    <img src="images/wave.svg" alt="wave">
+                    <span class="map-point__num">9 - 13</span>
+                    <span class="map-point__descr">SURF (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Water.svg" alt="water">
+                    <span class="map-point__num">+2.3</span>
+                    <span class="map-point__descr">TIDE (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Wind.svg" alt="wind">
+                    <span class="map-point__num">4 SE</span>
+                    <span class="map-point__descr">WIND (KTS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-point">
+              <div class="map-point__info">
+                <h3 class="map-point__title">Airlie Beach</h3>
+                <a href="#" class="map-point__btn">
+                  <img src="images/info-arr.svg" alt="arrow">
+                </a>
+                <h4 class="map-point__subtitle">Australia</h4>
+                <ul class="list-reset map-point__columns">
+                  <li class="map-point__item">
+                    <img src="images/wave.svg" alt="wave">
+                    <span class="map-point__num">9 - 13</span>
+                    <span class="map-point__descr">SURF (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Water.svg" alt="water">
+                    <span class="map-point__num">+2.3</span>
+                    <span class="map-point__descr">TIDE (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Wind.svg" alt="wind">
+                    <span class="map-point__num">4 SE</span>
+                    <span class="map-point__descr">WIND (KTS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-point">
+              <div class="map-point__info">
+                <h3 class="map-point__title">Airlie Beach</h3>
+                <a href="#" class="map-point__btn">
+                  <img src="images/info-arr.svg" alt="arrow">
+                </a>
+                <h4 class="map-point__subtitle">Australia</h4>
+                <ul class="list-reset map-point__columns">
+                  <li class="map-point__item">
+                    <img src="images/wave.svg" alt="wave">
+                    <span class="map-point__num">9 - 13</span>
+                    <span class="map-point__descr">SURF (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Water.svg" alt="water">
+                    <span class="map-point__num">+2.3</span>
+                    <span class="map-point__descr">TIDE (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Wind.svg" alt="wind">
+                    <span class="map-point__num">4 SE</span>
+                    <span class="map-point__descr">WIND (KTS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-point">
+              <div class="map-point__info">
+                <h3 class="map-point__title">Airlie Beach</h3>
+                <a href="#" class="map-point__btn">
+                  <img src="images/info-arr.svg" alt="arrow">
+                </a>
+                <h4 class="map-point__subtitle">Australia</h4>
+                <ul class="list-reset map-point__columns">
+                  <li class="map-point__item">
+                    <img src="images/wave.svg" alt="wave">
+                    <span class="map-point__num">9 - 13</span>
+                    <span class="map-point__descr">SURF (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Water.svg" alt="water">
+                    <span class="map-point__num">+2.3</span>
+                    <span class="map-point__descr">TIDE (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Wind.svg" alt="wind">
+                    <span class="map-point__num">4 SE</span>
+                    <span class="map-point__descr">WIND (KTS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-point">
+              <div class="map-point__info">
+                <h3 class="map-point__title">Airlie Beach</h3>
+                <a href="#" class="map-point__btn">
+                  <img src="images/info-arr.svg" alt="arrow">
+                </a>
+                <h4 class="map-point__subtitle">Australia</h4>
+                <ul class="list-reset map-point__columns">
+                  <li class="map-point__item">
+                    <img src="images/wave.svg" alt="wave">
+                    <span class="map-point__num">9 - 13</span>
+                    <span class="map-point__descr">SURF (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Water.svg" alt="water">
+                    <span class="map-point__num">+2.3</span>
+                    <span class="map-point__descr">TIDE (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Wind.svg" alt="wind">
+                    <span class="map-point__num">4 SE</span>
+                    <span class="map-point__descr">WIND (KTS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-point">
+              <div class="map-point__info">
+                <h3 class="map-point__title">Airlie Beach</h3>
+                <a href="#" class="map-point__btn">
+                  <img src="images/info-arr.svg" alt="arrow">
+                </a>
+                <h4 class="map-point__subtitle">Australia</h4>
+                <ul class="list-reset map-point__columns">
+                  <li class="map-point__item">
+                    <img src="images/wave.svg" alt="wave">
+                    <span class="map-point__num">9 - 13</span>
+                    <span class="map-point__descr">SURF (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Water.svg" alt="water">
+                    <span class="map-point__num">+2.3</span>
+                    <span class="map-point__descr">TIDE (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Wind.svg" alt="wind">
+                    <span class="map-point__num">4 SE</span>
+                    <span class="map-point__descr">WIND (KTS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-point">
+              <div class="map-point__info">
+                <h3 class="map-point__title">Airlie Beach</h3>
+                <a href="#" class="map-point__btn">
+                  <img src="images/info-arr.svg" alt="arrow">
+                </a>
+                <h4 class="map-point__subtitle">Australia</h4>
+                <ul class="list-reset map-point__columns">
+                  <li class="map-point__item">
+                    <img src="images/wave.svg" alt="wave">
+                    <span class="map-point__num">9 - 13</span>
+                    <span class="map-point__descr">SURF (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Water.svg" alt="water">
+                    <span class="map-point__num">+2.3</span>
+                    <span class="map-point__descr">TIDE (FT)</span>
+                  </li>
+                  <li class="map-point__item">
+                    <img src="images/Wind.svg" alt="wind">
+                    <span class="map-point__num">4 SE</span>
+                    <span class="map-point__descr">WIND (KTS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+        </div>   
+        <div class="surf-swiper-navigation swiper-navigation">
+          <div class="surf-swiper-prev swiper-btn-prev">
+            <img class="swiper-arrow" src="images/arrleft.svg" alt="arrow">
+          </div>
+          <div class="surf-swiper-next swiper-btn-next">
+            <img class="swiper-arrow" src="images/arright.svg" alt="arrow">
+          </div>
+        </div>
+      <div class="slider-container">
+        <div class="swiper surf-swiper">   
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one">
+              <div class="surf-swiper__item">
+                <h3 class="surf-swiper__title">Malibu Beach</h3>
+                <p class="surf-swiper__descr">California | USA</p>
+                  <a class="surf-swiper__button" href="#">
+                    <span class="surf-swiper__btn">View</span>
+                    <span class="surf-swiper__btn surf-swiper__btn--add">Surf</span>
+                  </a>  
+                <img class="surf-swiper__image" src="images/surf-slide-1.jpg" alt="surf-image">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--two">
+              <div class="surf-swiper__item">
+                <h3 class="surf-swiper__title">Airlie Beach</h3>
+                <p class="surf-swiper__descr">Queensland | Australia</p>
+                  <a class="surf-swiper__button" href="#">
+                    <span class="surf-swiper__btn">View</span>
+                    <span class="surf-swiper__btn surf-swiper__btn--add">Surf</span>
+                  </a>  
+                <img class="surf-swiper__image" src="images/surf-slide-2.jpg" alt="surf-image">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--three">
+              <div class="surf-swiper__item">
+                <h3 class="surf-swiper__title">Cloud Nine</h3>
+                <p class="surf-swiper__descr">Siargao | Philippines</p>
+                  <a class="surf-swiper__button" href="#">
+                    <span class="surf-swiper__btn">View</span>
+                    <span class="surf-swiper__btn surf-swiper__btn--add">Surf</span>
+                  </a>  
+                <img class="surf-swiper__image" src="images/surf-slide-3.jpg" alt="surf-image">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--four">
+              <div class="surf-swiper__item">
+                <h3 class="surf-swiper__title">Vieux Boucau</h3>
+                <p class="surf-swiper__descr">Hossegor | France</p>
+                  <a class="surf-swiper__button" href="#">
+                    <span class="surf-swiper__btn">View</span>
+                    <span class="surf-swiper__btn surf-swiper__btn--add">Surf</span>
+                  </a>  
+                <img class="surf-swiper__image" src="images/surf-slide-4.jpg" alt="surf-image">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--five">
+              <div class="surf-swiper__item">
+                <h3 class="surf-swiper__title">Malibu Beach</h3>
+                <p class="surf-swiper__descr">California | USA</p>
+                  <a class="surf-swiper__button" href="#">
+                    <span class="surf-swiper__btn">View</span>
+                    <span class="surf-swiper__btn surf-swiper__btn--add">Surf</span>
+                  </a>  
+                <img class="surf-swiper__image" src="images/surf-slide-1.jpg" alt="surf-image">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--six">
+              <div class="surf-swiper__item">
+                <h3 class="surf-swiper__title">Airlie Beach</h3>
+                <p class="surf-swiper__descr">Queensland | Australia</p>
+                  <a class="surf-swiper__button" href="#">
+                    <span class="surf-swiper__btn">View</span>
+                    <span class="surf-swiper__btn surf-swiper__btn--add">Surf</span>
+                  </a>  
+                <img class="surf-swiper__image" src="images/surf-slide-2.jpg" alt="surf-image">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--seven">
+              <div class="surf-swiper__item">
+                <h3 class="surf-swiper__title">Cloud Nine</h3>
+                <p class="surf-swiper__descr">Siargao | Philippines</p>
+                  <a class="surf-swiper__button" href="#">
+                    <span class="surf-swiper__btn">View</span>
+                    <span class="surf-swiper__btn surf-swiper__btn--add">Surf</span>
+                  </a>  
+                <img class="surf-swiper__image" src="images/surf-slide-3.jpg" alt="surf-image">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--eight">
+              <div class="surf-swiper__item">
+                <h3 class="surf-swiper__title">Vieux Boucau</h3>
+                <p class="surf-swiper__descr">Hossegor | France</p>
+                  <a class="surf-swiper__button" href="#">
+                    <span class="surf-swiper__btn">View</span>
+                    <span class="surf-swiper__btn surf-swiper__btn--add">Surf</span>
+                  </a>  
+                <img class="surf-swiper__image" src="images/surf-slide-4.jpg" alt="surf-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section class="travel" id="travel">
+      <h2 class="travel__title section-title">Travel</h2>
+      <div class="swiper travel-swiper">
+        <div class="travel-swiper-navigation swiper-navigation">
+             <div class="travel-swiper-prev swiper-btn-prev">
+              <img class="swiper-arrow" src="images/arrleft.svg" alt="arrow">
+             </div>
+             <div class="travel-swiper-next swiper-btn-next">
+              <img class="swiper-arrow" src="images/arright.svg" alt="arrow">
+             </div>
+            </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="travel-swiper__descr section-descr">Shore</p>
+            <h3 class="travel-swiper__title section-subtitle">Airlie Beach <span>|</span> Australia</h3>
+            <img class="travel-swiper__image" src="images/travel-bg.png" alt="travel-image">
+            <div class="travel-swiper__bottom">
+              <p class="travel-swiper__suptitle">Airline</p>
+              <h3 class="travel-swiper__title travel-bottom-title">Virgin Australia</h3>
+              <ul class="list-reset travel-swiper__list">
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Destination</span>
+                  <h4 class="travel-item__title">Queensland Australia</h4>                  
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Distance</span>
+                  <h4 class="travel-item__title">7,065 Miles</h4>                  
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Travel Time</span>
+                  <h4 class="travel-item__title">23 Hours<br> 5 Minutes</h4>                
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Pricing</span>
+                  <div class="travel-item__titles">
+                    <h4 class="travel-item__title">$1,976 USD</h4>
+                    <span class="travel-item__subtitle">Round trip</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="travel-swiper__button" href="#">
+               <span class="travel-swiper__btn">Book</span>
+               <span class="travel-swiper__btn travel-swiper__btn--add">Flight</span>
+            </a>  
+          </div>
+          <div class="swiper-slide">
+            <p class="travel-swiper__descr section-descr">Shore</p>
+            <h3 class="travel-swiper__title section-subtitle">Airlie Beach <span>|</span> Australia</h3>
+            <img class="travel-swiper__image" src="images/travel-bg.png" alt="travel-image">
+            <div class="travel-swiper__bottom">
+              <p class="travel-swiper__suptitle">Airline</p>
+              <h3 class="travel-swiper__title travel-bottom-title">Virgin Australia</h3>
+              <ul class="list-reset travel-swiper__list">
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Destination</span>
+                  <h4 class="travel-item__title">Queensland Australia</h4>                  
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Distance</span>
+                  <h4 class="travel-item__title">7,065 Miles</h4>                  
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Travel Time</span>
+                  <h4 class="travel-item__title">23 Hours<br> 5 Minutes</h4>                
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Pricing</span>
+                  <h4 class="travel-item__title">$1,976 USD</h4>
+                </li>
+              </ul>
+            </div>
+            <a class="travel-swiper__button" href="#">
+               <span class="travel-swiper__btn">Book</span>
+               <span class="travel-swiper__btn travel-swiper__btn--add">Flight</span>
+            </a>  
+          </div>
+          <div class="swiper-slide">
+            <p class="travel-swiper__descr section-descr">Shore</p>
+            <h3 class="travel-swiper__title section-subtitle">Airlie Beach <span>|</span> Australia</h3>
+            <img class="travel-swiper__image" src="images/travel-bg.png" alt="travel-image">
+            <div class="travel-swiper__bottom">
+              <p class="travel-swiper__suptitle">Airline</p>
+              <h3 class="travel-swiper__title travel-bottom-title">Virgin Australia</h3>
+              <ul class="list-reset travel-swiper__list">
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Destination</span>
+                  <h4 class="travel-item__title">Queensland Australia</h4>                  
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Distance</span>
+                  <h4 class="travel-item__title">7,065 Miles</h4>                  
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Travel Time</span>
+                  <h4 class="travel-item__title">23 Hours<br> 5 Minutes</h4>                
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Pricing</span>
+                  <h4 class="travel-item__title">$1,976 USD</h4>
+                </li>
+              </ul>
+            </div>
+            <a class="travel-swiper__button" href="#">
+               <span class="travel-swiper__btn">Book</span>
+               <span class="travel-swiper__btn travel-swiper__btn--add">Flight</span>
+            </a>  
+          </div>
+          <div class="swiper-slide">
+            <p class="travel-swiper__descr section-descr">Shore</p>
+            <h3 class="travel-swiper__title section-subtitle">Airlie Beach <span>|</span> Australia</h3>
+            <img class="travel-swiper__image" src="images/travel-bg.png" alt="travel-image">
+            <div class="travel-swiper__bottom">
+              <p class="travel-swiper__suptitle">Airline</p>
+              <h3 class="travel-swiper__title travel-bottom-title">Virgin Australia</h3>
+              <ul class="list-reset travel-swiper__list">
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Destination</span>
+                  <h4 class="travel-item__title">Queensland Australia</h4>                  
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Distance</span>
+                  <h4 class="travel-item__title">7,065 Miles</h4>                  
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Travel Time</span>
+                  <h4 class="travel-item__title">23 Hours<br> 5 Minutes</h4>                
+                </li>
+                <li class="travel-swiper__item travel-item">
+                  <span class="travel-item__descr">Pricing</span>
+                  <h4 class="travel-item__title">$1,976 USD</h4>
+                </li>
+              </ul>
+            </div>
+            <a class="travel-swiper__button" href="#">
+               <span class="travel-swiper__btn">Book</span>
+               <span class="travel-swiper__btn travel-swiper__btn--add">Flight</span>
+            </a>  
+          </div>
+        </div>
+       </div>
+     </section>
+     <section class="sleep" id="sleep">
+      <h2 class="sleep__title section-title">Sleep</h2>
+      <div class="swiper sleep-swiper">
+        <div class="sleep-swiper-navigation swiper-navigation">
+             <div class="sleep-swiper-prev swiper-btn-prev">
+              <img class="swiper-arrow" src="images/arrleft.svg" alt="arrow">
+             </div>
+             <div class="sleep-swiper-next swiper-btn-next">
+              <img class="swiper-arrow" src="images/arright.svg" alt="arrow">
+             </div>
+            </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="sleep-swiper__descr section-descr">Resorts</p>
+            <h3 class="sleep-swiper__title section-subtitle">Auberge <span>|</span> Australia</h3>
+            <img class="sleep-swiper__image" src="images/sleep-bg.png" alt="sleep-image">
+            <div class="sleep-swiper__bottom">
+              <p class="sleep-swiper__suptitle">Rating</p>
+              <h3 class="sleep-swiper__title sleep-bottom-title">Excellent</h3>
+              <ul class="list-reset sleep-swiper__list">
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr">Resorts</span>
+                  <h4 class="sleep-item__title">Auberge Australia</h4>                  
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr"># of Nights</span>
+                  <h4 class="sleep-item__title"><span id="nights">5</span> Nights</h4>
+                  <div class="sleep-item__btns">
+                   <button class="btn-reset sleep-item__btn btn-minus-nights">
+                    <span class="btn-minus"></span>
+                   </button>
+                   <button class="btn-reset sleep-item__btn btn-plus-nights">
+                    <span class="btn-plus"></span>
+                   </button> 
+                  </div>                
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr"># of Guests</span>
+                  <h4 class="sleep-item__title"><span id="guests">4</span> Guests</h4>
+                  <div class="sleep-item__btns">
+                   <button class="btn-reset sleep-item__btn btn-minus-guests">
+                    <span class="btn-minus"></span>
+                   </button>
+                   <button class="btn-reset sleep-item__btn btn-plus-guests">
+                    <span class="btn-plus"></span>
+                   </button> 
+                  </div>               
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr">Pricing</span>
+                  <div class="sleep-item__titles">
+                    <h4 class="sleep-item__title">$349 USD</h4>
+                    <span class="sleep-item__subtitle">Per night</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="sleep-swiper__button" href="#">
+               <span class="sleep-swiper__btn">Book</span>
+               <span class="sleep-swiper__btn sleep-swiper__btn--add">Stay</span>
+            </a>  
+          </div>
+          <div class="swiper-slide">
+            <p class="sleep-swiper__descr section-descr">Resorts</p>
+            <h3 class="sleep-swiper__title section-subtitle">Auberge <span>|</span> Australia</h3>
+            <img class="sleep-swiper__image" src="images/sleep-bg.png" alt="sleep-image">
+            <div class="sleep-swiper__bottom">
+              <p class="sleep-swiper__suptitle">Rating</p>
+              <h3 class="sleep-swiper__title sleep-bottom-title">Excellent</h3>
+              <ul class="list-reset sleep-swiper__list">
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr">Resorts</span>
+                  <h4 class="sleep-item__title">Auberge Australia</h4>                  
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr"># of Nights</span>
+                  <h4 class="sleep-item__title">5 Nights</h4>
+                  <div class="sleep-item__btns">
+                   <button class="btn-reset sleep-item__btn btn-minus-nights">
+                    <span class="btn-minus"></span>
+                   </button>
+                   <button class="btn-reset sleep-item__btn btn-plus-nights">
+                    <span class="btn-plus"></span>
+                   </button> 
+                  </div>           
+                </li>
+                <li class="sleep-swiper__item travel-item">
+                  <span class="sleep-item__descr"># of Guests</span>
+                  <h4 class="sleep-item__title">4 Guests</h4> 
+                  <div class="sleep-item__btns">
+                   <button class="btn-reset sleep-item__btn btn-minus-guests">
+                    <span class="btn-minus"></span>
+                   </button>
+                   <button class="btn-reset sleep-item__btn btn-plus-guests">
+                    <span class="btn-plus"></span>
+                   </button> 
+                  </div>       
+                </li>
+                <li class="sleep-swiper__item travel-item">
+                  <span class="sleep-item__descr">Pricing</span>
+                  <div class="sleep-item__titles">
+                    <h4 class="sleep-item__title">$349 USD</h4>
+                    <span class="sleep-item__subtitle">Per night</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="sleep-swiper__button" href="#">
+               <span class="sleep-swiper__btn">Book</span>
+               <span class="sleep-swiper__btn sleep-swiper__btn--add">Stay</span>
+            </a>  
+          </div>
+          <div class="swiper-slide">
+            <p class="sleep-swiper__descr section-descr">Resorts</p>
+            <h3 class="sleep-swiper__title section-subtitle">Auberge <span>|</span> Australia</h3>
+            <img class="sleep-swiper__image" src="images/sleep-bg.png" alt="sleep-image">
+            <div class="sleep-swiper__bottom">
+              <p class="sleep-swiper__suptitle">Rating</p>
+              <h3 class="sleep-swiper__title sleep-bottom-title">Excellent</h3>
+              <ul class="list-reset travel-swiper__list">
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr">Resorts</span>
+                  <h4 class="sleep-item__title">Auberge Australia</h4>                  
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr"># of Nights</span>
+                  <h4 class="sleep-item__title">5 Nights</h4>
+                  <div class="sleep-item__btns">
+                   <button class="btn-reset sleep-item__btn btn-minus-nights">
+                    <span class="btn-minus"></span>
+                   </button>
+                   <button class="btn-reset sleep-item__btn btn-plus-nights">
+                    <span class="btn-plus"></span>
+                   </button> 
+                  </div>                   
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr"># of Guests</span>
+                  <h4 class="sleep-item__title">4 Guests</h4> 
+                  <div class="sleep-item__btns">
+                   <button class="btn-reset sleep-item__btn btn-minus-guests">
+                    <span class="btn-minus"></span>
+                   </button>
+                   <button class="btn-reset sleep-item__btn btn-plus-guests">
+                    <span class="btn-plus"></span>
+                   </button> 
+                  </div>                  
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr">Pricing</span>
+                  <div class="sleep-item__titles">
+                    <h4 class="sleep-item__title">$349 USD</h4>
+                    <span class="sleep-item__subtitle">Per night</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="sleep-swiper__button" href="#">
+               <span class="sleep-swiper__btn">Book</span>
+               <span class="sleep-swiper__btn sleep-swiper__btn--add">Stay</span>
+            </a>  
+          </div>
+          <div class="swiper-slide">
+            <p class="sleep-swiper__descr section-descr">Resorts</p>
+            <h3 class="sleep-swiper__title section-subtitle">Auberge <span>|</span> Australia</h3>
+            <img class="sleep-swiper__image" src="images/sleep-bg.png" alt="sleep-image">
+            <div class="sleep-swiper__bottom">
+              <p class="sleep-swiper__suptitle">Rating</p>
+              <h3 class="sleep-swiper__title sleep-bottom-title">Excellent</h3>
+              <ul class="list-reset sleep-swiper__list">
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr">Resorts</span>
+                  <h4 class="sleep-item__title">Auberge Australia</h4>                  
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr"># of Nights</span>
+                  <h4 class="sleep-item__title">5 Nights</h4>
+                  <div class="sleep-item__btns">
+                   <button class="btn-reset sleep-item__btn btn-minus-nights">
+                    <span class="btn-minus"></span>
+                   </button>
+                   <button class="btn-reset sleep-item__btn btn-plus-nights">
+                    <span class="btn-plus"></span>
+                   </button> 
+                  </div>                   
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr"># of Guests</span>
+                  <h4 class="sleep-item__title">4 Guests</h4> 
+                  <div class="sleep-item__btns">
+                   <button class="btn-reset sleep-item__btn btn-minus-guests">
+                    <span class="btn-minus"></span>
+                   </button>
+                   <button class="btn-reset sleep-item__btn btn-plus-guests">
+                    <span class="btn-plus"></span>
+                   </button> 
+                  </div>                
+                </li>
+                <li class="sleep-swiper__item sleep-item">
+                  <span class="sleep-item__descr">Pricing</span>
+                  <div class="sleep-item__titles">
+                    <h4 class="sleep-item__title">$349 USD</h4>
+                    <span class="sleep-item__subtitle">Per night</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="sleep-swiper__button" href="#">
+               <span class="sleep-swiper__btn">Book</span>
+               <span class="sleep-swiper__btn sleep-swiper__btn--add">Stay</span>
+            </a>  
+          </div>
+        </div>
+       </div>
+     </section>
+     <section class="shop" id="shop">
+      <h2 class="shop__title section-title">Shop</h2>
+      <div class="swiper shop-swiper">
+        <div class="shop-swiper-navigation swiper-navigation">
+             <div class="shop-swiper-prev swiper-btn-prev">
+              <img class="swiper-arrow" src="images/arrleft.svg" alt="arrow">
+             </div>
+             <div class="shop-swiper-next swiper-btn-next">
+              <img class="swiper-arrow" src="images/arright.svg" alt="arrow">
+             </div>
+            </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="shop-swiper__content">
+              <div class="shop-swiper__intro">
+                <p class="shop-swiper__suptitle">Style</p>
+                <h3 class="shop-swiper__title shop-bottom-title">North Nugget TT Surfboard</h3>
+                <div class="shop-swiper__price">
+                  <span class="shop-swiper__cost">$799</span>
+                </div>
+                <div class="shop-swiper__link">
+                  <a class="shop-swiper__button" href="#">
+                     <span class="shop-swiper__btn">Drop</span>
+                     <span class="shop-swiper__btn shop-swiper__btn--add">in</span>
+                    </a> 
+                </div>
+              </div>
+              <div class="shop-swiper__product product">
+                <img class="shop-swiper__image" src="images/board.png" alt="product-image">
+                <div class="product__descr">
+                  <span>Left Double Concave with Vee Shape low point</span>
+                </div>
+                <div class="product__descr">
+                  <span>Bottom Double Concave with Vee Shape low point</span>
+                </div>
+                <div class="product__descr">
+                  <span>Right Double Concave with Vee Shape low point</span>
+                </div>                
+              </div>
+              <div class="shop-swiper__accessories"> 
+                <ul class="list-reset shop-swiper__list">
+                  <li class="shop-swiper__item shop-item">
+                    <h4 class="shop-item__title">Extras</h4>
+                    <img class="shop-item__product" src="images/wax.svg" alt="product-image">
+                    <span class="shop-item__descr">Sex wax</span>
+                    <span class="shop-item__price">$24.99</span>
+                  </li>
+                  <li class="shop-swiper__item shop-item"> 
+                    <img class="shop-item__product" src="images/bracelet.svg" alt="product-image">
+                    <span class="shop-item__descr">Pura vida</span>
+                    <span class="shop-item__price">$27.99</span>
+                  </li>
+                </ul>
+             </div>
+           </div> 
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">
+            <div class="shop-swiper__content">
+              <div class="shop-swiper__intro">
+                <p class="shop-swiper__suptitle">Style</p>
+                <h3 class="shop-swiper__title shop-bottom-title">North Nugget TT Surfboard</h3>
+                <div class="shop-swiper__price">
+                  <span class="shop-swiper__cost">$799</span>
+                </div>
+                <div class="shop-swiper__link">
+                  <a class="shop-swiper__button" href="#">
+                     <span class="shop-swiper__btn">Drop</span>
+                     <span class="shop-swiper__btn shop-swiper__btn--add">in</span>
+                    </a> 
+                </div>
+              </div>
+              <div class="shop-swiper__product product">
+                <img class="shop-swiper__image" src="images/board.png" alt="product-image">
+                <div class="product__descr">
+                  <span></span>
+                </div>
+                <div class="product__descr">
+                  <span></span>
+                </div>
+                <div class="product__descr">
+                  <span></span>
+                </div>               
+              </div>
+              <div class="shop-swiper__accessories"> 
+                <ul class="list-reset shop-swiper__list">
+                  <li class="shop-swiper__item shop-item">
+                    <h4 class="shop-item__title">Extras</h4>
+                    <img class="shop-item__product" src="images/wax.svg" alt="product-image">
+                    <span class="shop-item__descr">Sex wax</span>
+                    <span class="shop-item__price">$24.99</span>
+                  </li>
+                  <li class="shop-swiper__item shop-item"> 
+                    <img class="shop-item__product" src="images/bracelet.svg" alt="product-image">
+                    <span class="shop-item__descr">Pura vida</span>
+                    <span class="shop-item__price">$27.99</span>
+                  </li>
+                </ul>
+             </div>
+           </div> 
+          </div>          
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">
+            <div class="shop-swiper__content">
+              <div class="shop-swiper__intro">
+                <p class="shop-swiper__suptitle">Style</p>
+                <h3 class="shop-swiper__title shop-bottom-title">North Nugget TT Surfboard</h3>
+                <div class="shop-swiper__price">
+                  <span class="shop-swiper__cost">$799</span>
+                </div>
+                <div class="shop-swiper__link">
+                  <a class="shop-swiper__button" href="#">
+                     <span class="shop-swiper__btn">Drop</span>
+                     <span class="shop-swiper__btn shop-swiper__btn--add">in</span>
+                    </a> 
+                </div>
+              </div>
+              <div class="shop-swiper__product product">
+                <img class="shop-swiper__image" src="images/board.png" alt="product-image">
+                <div class="product__descr">
+                  <span></span>
+                </div>
+                <div class="product__descr">
+                  <span></span>
+                </div>
+                <div class="product__descr">
+                  <span></span>
+                </div>               
+              </div>
+              <div class="shop-swiper__accessories"> 
+                <ul class="list-reset shop-swiper__list">
+                  <li class="shop-swiper__item shop-item">
+                    <h4 class="shop-item__title">Extras</h4>
+                    <img class="shop-item__product" src="images/wax.svg" alt="product-image">
+                    <span class="shop-item__descr">Sex wax</span>
+                    <span class="shop-item__price">$24.99</span>
+                  </li>
+                  <li class="shop-swiper__item shop-item"> 
+                    <img class="shop-item__product" src="images/bracelet.svg" alt="product-image">
+                    <span class="shop-item__descr">Pura vida</span>
+                    <span class="shop-item__price">$27.99</span>
+                  </li>
+                </ul>
+             </div>
+           </div> 
+          </div>         
+        </div>
+       </div>
+      </div> 
+     </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__upper-content">
+        <a class="footer__button" href="#">
+          <span class="footer__btn">Go</span>
+          <span class="footer__btn footer__btn--add">Surf</span>
+        </a>  
+      </div>
+      <div class="footer__down-content">
+         <span class="footer__copyright">© Go-Surf 2018. All Rights Reserved.</span>
+      </div>
+    </footer>
+  </div>
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
